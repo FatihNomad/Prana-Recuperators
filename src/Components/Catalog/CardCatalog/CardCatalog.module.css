@@ -1,0 +1,33 @@
+.card {
+    flex: 0 1 32%;
+    border: 3px solid #0099FF;
+    border-radius: 15px;
+}
+
+.cardContainer {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.card_img {
+    text-align: center;
+}
+
+.card_img img {
+    width: 100%;
+}
+
+.card h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: calc(17px + 8 * (100vw /1920));
+}
+
+.card_info p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 400;
+    font-size: calc(15px + 5 * (100vw /1920));
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 17px;
+    margin: 12px 0;
+}

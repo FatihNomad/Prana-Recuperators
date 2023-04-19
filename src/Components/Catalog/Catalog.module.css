@@ -1,0 +1,83 @@
+.container {
+    width: 80%;
+    margin: 5% auto 0;
+}
+
+.container h2 {
+    font-size: calc(20px + 12 * (100vw/1920));
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.container h2::after {
+    content: '';
+    width: 89px;
+    bottom: -20px;
+    height: 3px;
+    background-color: #2E7CC4;
+    position: absolute;
+}
+
+.recuperators {
+    margin-top: 30px;
+}
+
+.recuperators h3 {
+    text-align: center;
+    font-size: calc(20px + 12 * (100vw/1920));
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.cardCatalog {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.catalog_btn {
+    text-align: center;
+    margin: 70px 0;
+}
+
+.catalog_btn button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: calc(15px + 5 * (100vw/1920));
+    background: #0099FF;
+    color: #fff;
+    padding: 16px 9px;
+    border-radius: 15px;
+    transition: all 0.3s;
+
+}
+
+.catalog_btn button:hover {
+    background-color: #2e83e4;
+
+}
+
+.cardCatalog2 {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+@media (max-width:992px) {
+    .container {
+        width: 90%;
+    }
+
+    .cardCatalog,
+    .cardCatalog2 {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}

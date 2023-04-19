@@ -1,0 +1,22 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 50px;
+    min-height: 108px;
+}
+
+.card h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: calc(17px + 7 * (100vw/1920))
+}
+
+.card p {
+    font-family: 'Open Sans';
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: calc(14px + 4 * (100vw/1920));
+    line-height: 24px;
+}

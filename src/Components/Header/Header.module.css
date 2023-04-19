@@ -1,0 +1,64 @@
+.header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #fff;
+}
+
+.header {
+    height: 70px;
+
+}
+
+.logo {
+    flex: 0 1 20%;
+    padding: 10px 0;
+}
+
+.logo img {
+    width: 90%;
+}
+
+.info {
+    gap: 30px;
+}
+
+.info,
+.phone,
+.email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone,
+.email {
+    gap: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: calc(13px + 5 * (100vw/1920));
+    color: #000;
+}
+
+.phone a,
+.email a {
+    color: #000;
+}
+
+@media (max-width:992px) {
+
+    .info {
+        display: none;
+    }
+
+    .logo {
+        flex: 0 1 30%;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+}

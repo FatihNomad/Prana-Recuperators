@@ -1,0 +1,76 @@
+.principe {
+    background: url('../../assets/principe/bg.png') center / cover no-repeat;
+    height: auto;
+    padding: 60px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.principe_info h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: calc(20px + 12 * (100vw/1920));
+    color: #fff;
+}
+
+.principe_info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex: 0 1 45%;
+}
+
+.text {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: calc(17px + 7 * (100vw/1920));
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.text p {
+    line-height: 25px;
+}
+
+.principe_video {
+    flex: 0 1 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.video_div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.video_div iframe {
+    border-radius: 15px;
+    width: 436px;
+    min-height: 237px;
+}
+
+.principe_img img {
+    width: 100%;
+}
+
+@media (max-width:992px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .video_div iframe {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .principe h2 {
+        text-align: center;
+    }
+}
