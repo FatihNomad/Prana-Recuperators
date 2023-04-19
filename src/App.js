@@ -13,8 +13,8 @@ const App = () => {
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
   const sendFormtoTelegram = (data) => {
-    const token = `6119196221:AAEXXGVCE4pSwmzm8eMA8KYWxRJGyUi9e3A`
-    const chatId = `-1001725855700`
+    const token // there was a telegram token
+    const chatId  // there was a chat id
     const text = `${data}`
 
     fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${text}`)
